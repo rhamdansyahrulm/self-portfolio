@@ -4,7 +4,6 @@ import {
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-import Particle from './Particle';
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -31,12 +30,7 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
-          />
+        <div className='flex justify-center items-center w-full h-ful'>
         </div>
       }
     >
@@ -69,13 +63,13 @@ const ExperienceCard = ({ experience }) => {
   
 const Experience = () => {
   return (
-    <div className="mt-[-24px] bg-[url('/images/banner.jpg')] bg-cover bg-center h-screen flex items-center">
+    <div className="mt-[-24px] bg-gradient-to-b from-[#02050a] to-slate-900 bg-cover bg-center h-screen flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-4 w-full mx-auto gap-[3rem]">
         <div className="lg:w-[500px] mx-auto md:mx-0 lg:h-[500px] w-[100px] h-[300px] relative col-span-1 flex items-center">
           <div className="ml-10">
             <motion.div variants={textVariant()}>
-              <h1 className="text-[15px] font-bold uppercase text-slate-500 mb-[1rem] mt-[20vh]">
-                What I have done so far
+              <h1 className="text-[15px] font-bold uppercase text-slate-200 mb-[0.5rem] mt-[20vh]">
+                my Personal Professional Journey
               </h1>
               <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
                 Work <span className="text-yellow-400">Experience</span>
@@ -105,4 +99,4 @@ const Experience = () => {
   
   
 
-export default starWrapper(Experience, "work")
+export default Experience

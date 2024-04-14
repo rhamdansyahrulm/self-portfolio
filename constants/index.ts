@@ -37,7 +37,7 @@ const experiences = [
     },
 ]
 
-const work = [
+const projects = [
     {
         name : "Car Rent",
         description : "lorem ipsum asdasdaerad",
@@ -64,4 +64,4 @@ const work = [
     }
 ]
 
-export { experiences, work }
+export { experiences, projects }
