@@ -41,7 +41,7 @@ const PortfolioSlider = () => {
 
 const Portfolio = () => {
   return (
-    <div className="bg-slate-900 pt-[4rem] md:pt-[8rem] h-[100%]">
+    <div className="bg-[#141414] pt-[4rem] md:pt-[8rem] h-[100%]">
       <h1 className="text-[15px] font-bold uppercase text-slate-200 mb-[1rem] text-center">
         What I have done so far
       </h1>

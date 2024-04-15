@@ -4,15 +4,15 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div className="pt-[4rem] md:pt-[8rem] pb-[4rem] bg-gradient-to-b from-slate-900 to-slate-700">
-        <h1 className="text-[15px] font-bold uppercase text-slate-200 mb-[1rem] text-center">
+    <div className="pt-[4rem] md:pt-[8rem] pb-[4rem] bg-gradient-to-b from-[#141414] to-black">
+        <h1 className="text-[15px] font-bold uppercase text-slate-200 mb-[1rem] text-left ml-[10%]">
         What I have done so far
         </h1>
-        <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize font-bold text-white text-center">
+        <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize font-bold text-white text-left ml-[10%]">
             My <span className="text-yellow-400">BLOG</span>
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-[4rem] gap-[3rem] w-[80%] mx-auto">
-            <div>
+            <div className="opacity-80 hover:cursor-pointer hover:opacity-100">
                 <div className="w-[100%] relative h-[400px]">
                     <Image src="/images/blog3.jpg" alt="blog" layout="fill" className="object-cover"/>
                 </div>
@@ -25,7 +25,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="opacity-80 hover:cursor-pointer hover:opacity-100">
                 <div className="w-[100%] relative h-[400px]">
                     <Image src="/images/blog3.jpg" alt="blog" layout="fill" className="object-cover"/>
                 </div>
@@ -38,7 +38,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="opacity-80 hover:cursor-pointer hover:opacity-100">
                 <div className="w-[100%] relative h-[400px]">
                     <Image src="/images/blog3.jpg" alt="blog" layout="fill" className="object-cover"/>
                 </div>

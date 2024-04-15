@@ -6,7 +6,7 @@ import { ArrowDownTrayIcon } from '@heroicons/react/20/solid';
 
 const Hero = () => {
   return (
-    <div className="h-[100vh] bg-gradient-to-b from-[#141c27] to-[#02050a] bg-cover bg-center">
+    <div className="h-[100vh] bg-gradient-to-b from-slate-600 to-slate-900 bg-cover bg-center">
         <Particle />
         <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
             
@@ -25,7 +25,7 @@ const Hero = () => {
                     HI, I'M <span className="text-yellow-400">RHAMDAN SYAHRUL !</span>
                 </h1>
                 <TextEffect />
-                <p className="mt-[1rem] text-[18px] text-[#ffffff92]">
+                <p className="mt-[1rem] text-[18px] text-slate-200">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos vero sed corrupti assumenda. Totam veniam impedit aliquid et quas tenetur quaerat recusandae doloribus, eius dignissimos ad vel harum distinctio rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit, numquam dolor saepe officiis voluptatibus nihil. Consectetur omnis qui ducimus illum at sint laboriosam praesentium amet reiciendis veritatis. Dolores, quos.
                 </p>
             </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
     return (
-        <div className="bg-[#02050a] pb-[3rem] pt-[4rem] md:pt-[15rem] h-[100vh]">
+        <div className="bg-slate-900 pb-[3rem] pt-[4rem] md:pt-[15rem] h-[100vh]">
             <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
                 <div className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">
                     <Image src="/images/about.jpg" alt="user" layout="fill" objectFit="contain" className="relative z-[11] w-[100%] h-[100%] object-contain"/>

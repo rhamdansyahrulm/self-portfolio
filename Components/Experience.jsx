@@ -63,7 +63,7 @@ const ExperienceCard = ({ experience }) => {
   
 const Experience = () => {
   return (
-    <div className="mt-[-24px] bg-gradient-to-b from-[#02050a] to-slate-900 bg-cover bg-center h-screen flex items-center">
+    <div className="mt-[-24px] bg-gradient-to-b from-slate-900 to-[#141414] bg-cover bg-center h-screen flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-4 w-full mx-auto gap-[3rem]">
         <div className="lg:w-[500px] mx-auto md:mx-0 lg:h-[500px] w-[100px] h-[300px] relative col-span-1 flex items-center">
           <div className="ml-10">
