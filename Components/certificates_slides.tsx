@@ -1,17 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
-
-const imgs = [
-  "/images/p1.jpg",
-  "/images/p2.jpg",
-  "/images/p3.jpg",
-  "/images/p4.jpg",
-  "/images/p5.jpg",
-  "/images/p1.jpg",
-  "/images/p2.jpg",
-  "/images/p3.jpg",
-  "/images/p4.jpg",
-];
+import { certificate_image } from "@/constants";
 
 const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 3;
@@ -35,7 +24,7 @@ export const Certificates_slides = () => {
 
       if (x === 0) {
         setImgIndex((pv) => {
-          if (pv >= (imgs.length / 6) - 1) {
+          if (pv >= (certificate_image.length / 6) - 1) {
             return 0;
           }
           return pv + 1;
@@ -49,7 +38,7 @@ export const Certificates_slides = () => {
   const onDragEnd = () => {
     const x = dragX.get();
 
-    if (x <= -DRAG_BUFFER && imgIndex < imgs.length - 1) {
+    if (x <= -DRAG_BUFFER && imgIndex < certificate_image.length - 1) {
       setImgIndex((pv) => 2);
     } else if (x >= DRAG_BUFFER && imgIndex > 0) {
       setImgIndex((pv) => 2);
@@ -84,12 +73,12 @@ export const Certificates_slides = () => {
 const Images = ({ imgIndex }) => {
   return (
     <>
-      {imgs.map((imgSrc, idx) => {
+      {certificate_image.map((certificate_imagerc, idx) => {
         return (
           <motion.div
-            key={imgSrc} // Use a unique key for each image
+            key={certificate_imagerc} // Use a unique key for each image
             style={{
-              backgroundImage: `url(${imgSrc})`, // Use the url() function for background images
+              backgroundImage: `url(${certificate_imagerc})`, // Use the url() function for background images
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

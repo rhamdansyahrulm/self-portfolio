@@ -98,4 +98,34 @@ const project_list = [
     },
 ]
 
-export { experiences, educations_formal, educations_nonformal, project_list }
+const blog_list = [
+    {
+        image : "/images/blog1.jpg",
+        title : "blog pertama",
+        date : "December 9, 2024",
+    },
+    {
+        image : "/images/blog2.jpg",
+        title : "blog kedua",
+        date : "December 10, 2024",
+    },
+    {
+        image : "/images/blog3.jpg",
+        title : "blog ketiga",
+        date : "December 11, 2024",
+    },
+]
+
+const certificate_image = [
+    "/images/p1.jpg",
+    "/images/p2.jpg",
+    "/images/p3.jpg",
+    "/images/p4.jpg",
+    "/images/p5.jpg",
+    "/images/p1.jpg",
+    "/images/p2.jpg",
+    "/images/p3.jpg",
+    "/images/p4.jpg",
+  ];
+
+export { experiences, educations_formal, educations_nonformal, project_list, blog_list, certificate_image }
