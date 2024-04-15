@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import PortfolioContent from "./PortfolioContent"
+import { project_list } from "@/constants"
 
 const responsive = {
   dekstop : {
@@ -32,9 +33,14 @@ const PortfolioSlider = () => {
       responsive={responsive}
       itemClass="item"
     >
-      <PortfolioContent image="/images/port1.png" title="asdasd" tools="asdasdasd"/>
-      <PortfolioContent image="/images/port1.png" title="asdasd" tools="asdasdasd"/>
-      <PortfolioContent image="/images/port1.png" title="asdasd" tools="asdasdasd"/>
+      {project_list.map((project, index) => (
+        <PortfolioContent 
+        key={`education-${index}`}
+        image={project.image}
+        title={project.title}
+        tools={project.tools}
+        desc={project.desc}/>
+      ))}
     </Carousel>
   )
 }
