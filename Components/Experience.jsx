@@ -30,7 +30,8 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-ful'>
+        <div className='flex justify-center items-center w-full h-ful pt-2'>
+          <img src={experience.icons} alt={experience.company_name} className='w-[70%] h-[70%] object-contain' />
         </div>
       }
     >
@@ -40,16 +41,17 @@ const ExperienceCard = ({ experience }) => {
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {experience.company_name} 
+          <span className='text-yellow-400 text-[12px] font-bold'> ({experience.status})</span>
         </p>
       </div>
 
       {showPoints && ( // Render points if showPoints is true
-        <ul className='mt-5 list-disc ml-5 space-y-2'>
+        <ul className='mt-5 list-disc ml-5 space-y-2 experience-points'>
           {experience.points.map((point, index) => (
             <li
               key={`experience-point-${index}`}
-              className='text-white text-[14px] pl-1 tracking-wider'
+              className='text-white text-[14px] pl-1 tracking-wider text-justify'
             >
               {point}
             </li>

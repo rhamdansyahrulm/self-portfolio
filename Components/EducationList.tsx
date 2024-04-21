@@ -23,11 +23,11 @@ const EducationList = ({ education, index }) => {
         <p className='ml-[4%] uppercase font-semibold mb-[1rem] text-[12px] sm:text-[14px] md:text-[14px] text-white'>
             {education.major}
         </p>
-        <ul className='ml-[4%] text-white font-bold w-[80%] text-[17px] opacity-85'>
+        <ul className='ml-[8%] list-decimal text-white text-justify w-[80%] text-[17px] opacity-85'>
             {education.points.map((point, index) => (
                 <li key={`experience-point-${index}`}
-                    className='text-white text-[14px] tracking-wider'>
-                    {index+1}.{point}
+                    className='text-white text-[14px] tracking-wider mb-2'>
+                        {point}
                 </li>
             ))}
         </ul>

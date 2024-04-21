@@ -82,3 +82,14 @@
   font: gray;
   font-size: 20px;
 }
+
+.experience-card ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.experience-card ul.click {
+  max-height: 1000px; /* Atur nilai yang cukup besar untuk memastikan konten ditampilkan sepenuhnya */
+  transition: max-height 5s ease;
+}

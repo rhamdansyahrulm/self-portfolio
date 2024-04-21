@@ -25,8 +25,12 @@ const Hero = () => {
                     HI, I'M <span className="text-yellow-400">RHAMDAN SYAHRUL !</span>
                 </h1>
                 <TextEffect />
-                <p className="mt-[1rem] text-[18px] text-slate-200">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos vero sed corrupti assumenda. Totam veniam impedit aliquid et quas tenetur quaerat recusandae doloribus, eius dignissimos ad vel harum distinctio rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit, numquam dolor saepe officiis voluptatibus nihil. Consectetur omnis qui ducimus illum at sint laboriosam praesentium amet reiciendis veritatis. Dolores, quos.
+                <p className="mt-[1rem] text-[18px] text-slate-200 text-justify">
+                Welcome to my corner of the digital world, where data comes to life and insights take flight. As a passionate data enthusiast and skilled Python developer, Within this portfolio, you'll find a synthesis of my journey through the realms of data analysis, data science, and data engineering, intertwined with my expertise in Python development. From crafting predictive models to engineering data pipelines, each project represents a chapter in my ongoing quest to unravel the mysteries hidden within data. 
+                </p>
+                <br/>
+                <p className="mt-[1rem] text-[18px] text-slate-200 text-justify">
+                Please, take a moment to wander through the corridors of code and analysis, and may this journey ignite your curiosity and inspire new insights in the boundless world of data. Welcome, and let's embark on this data-driven adventure together!
                 </p>
             </div>
             <div className="w-[500px] hidden bg-white relative lg:flex items-center rounded-full h-[500px] ml-40">
