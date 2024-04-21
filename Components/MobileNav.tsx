@@ -20,9 +20,6 @@ const MobileNav = ({nav, closeNav}:Props) => {
             <div className="nav-link-mobile">BLOG</div>
             <div className="nav-link-mobile">CONTACT</div>
         </div>
-        <div onClick={closeNav} className="absolute cursor-pointer top-[2rem] right-[2rem] h-[2rem] text-yellow-400">
-              <XMarkIcon className='mt-90'/>
-        </div>
     </div>
   );
 };

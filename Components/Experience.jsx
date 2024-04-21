@@ -46,7 +46,7 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      {showPoints && ( // Render points if showPoints is true
+      {showPoints && (
         <ul className='mt-5 list-disc ml-5 space-y-2 experience-points'>
           {experience.points.map((point, index) => (
             <li

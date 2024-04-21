@@ -20,34 +20,34 @@ const HomePage = () => {
       <div>
         {/* Navbar */}
         <MobileNav nav={nav} closeNav={closeNav} />
-        <Nav openNav={openNav} />
+        <Nav nav={nav} openNav={openNav} closeNav={closeNav} />
 
         {/* Hero Section */}
         <Hero />
-        <div>
+        <section>
           {/* About Section */}
           <About />
-        </div>
-        <div>
+        </section>
+        <section>
           {/* Experience Section */}
           <Experience />
-        </div>
-        <div>
+        </section>
+        <section>
           {/* Experience Section */}
           <Education />
-        </div>
-        <div>
+        </section>
+        <section>
           {/* Experience Section */}
           <PortfolioSlider />
-        </div>
-        <div>
+        </section>
+        <section>
           {/* Experience Section */}
           <Blog />
-        </div>
-        <div>
+        </section>
+        <section>
           {/* Experience Section */}
           <Certificate />
-        </div>
+        </section>
       </div>
     </div>
   );

@@ -11,15 +11,15 @@ const About = () => {
                     <div className="absolute w-[100%] h-[100%] z-[10] bg-slate-400 top-[2rem] right-[-2rem]"></div>
                 </div>
                 <div>
-                    <h1 className="text-[20px] font-bold uppercase text-slate-200 mb-[1rem]">
+                    <h1 className="text-center md:text-justify text-[20px] font-bold uppercase text-slate-200 mb-[1rem]">
                         ABOUT ME
                     </h1>
-                    <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-slate-200">
+                    <h2 className="text-center md:text-justify text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-slate-200">
                         Transforming <span className="text-yellow-400">Visions</span>
                     </h2>
                     <div className="mb-[3rem] flex items-center md:space-x-10">
                         <span className="w-[100px] hidden md:block h-[5px] bg-slate-200 rounded-sm"></span>
-                        <p className="text-[19px] text-slate-100 w-[80%] text-justify">
+                        <p className="ml-8 md:ml-0 text-center  text-[12px] md:text-[19px] text-slate-100 w-[80%] md:text-justify">
                         <span className='font-bold text-yellow-400'> Hi there! </span>My name is <span className='font-bold text-yellow-400'> Rhamdan Syahrul </span>, graduated from <span className='font-bold text-yellow-400'> Gadjah Mada  University </span>, and I have a strong interest in <span className='font-bold text-slate-300'> data science, machine learning, and all things data-related </span>. As a data enthusiast, I love exploring the vast world of data and finding meaningful insights that can help businesses and organizations make better decisions. I'm fascinated by the power of machine learning and how it can be used to solve real-world problems and make our lives easier.
                         </p>
                     </div>
